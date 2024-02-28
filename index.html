@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo de <model-viewer></title>
+        <!-- Incluir la librería model-viewer -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+        <style>
+            /* Estilos opcionales para el visor */
+            model-viewer {
+                width: 500px;
+                height: 400px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Uso básico de <model-viewer> con un modelo 3D -->
+        <model-viewer src="model.glb" alt="Un modelo 3D" auto-rotate camera-controls></model-viewer>
+    </body>
+
+</html>
