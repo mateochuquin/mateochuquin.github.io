@@ -1,24 +1,141 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ejemplo de <model-viewer></title>
-        <!-- Incluir la librería model-viewer -->
-        <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
-        <style>
-            /* Estilos opcionales para el visor */
-            model-viewer {
-                width: 500px;
-                height: 400px;
-            }
-        </style>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="Style.css"> 
 
-    <body>
-        <!-- Uso básico de <model-viewer> con un modelo 3D -->
-        <model-viewer src="model.glb" alt="Un modelo 3D" auto-rotate camera-controls></model-viewer>
-    </body>
 
-</html>
+</head>
+
+<body>
+
+    <div class="head">
+        <div class="logo">
+            <a href="">Pyrolab</a>
+        </div>
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            
+        </nav>
+
+    </div>
+    <header class="content header">
+        <h2 class="tittle">Pirolisis</h2>
+        <p>
+            El proceso de pirolisis consiste en la descomposición química de un material por degradación térmica en
+            ausencia de oxígeno.
+        </p>
+
+
+    </header>
+
+    <section class="content sau">
+
+        <h2 class="tittle">Caracteristicas </h2>
+        <h3>Alta Temperatura </h3>
+        <p>La pirólisis generalmente ocurre a temperaturas entre 300°C y 900°C, aunque el rango puede variar según el
+            material y el objetivo del proceso.
+        </p>
+        <h3>Ausencia de Oxígeno </h3>
+        <p>Se realiza en un ambiente sin oxígeno para evitar la combustión del material.
+        </p>
+        <h3>Productos Diversos </h3>
+        <h4>Gas </h4>
+        <p>Compuestos gaseosos que pueden usarse como combustible o en la síntesis de otros productos químicos.</p>
+        <h4>Liquido </h4>
+        <p> Aceite pirolítico que puede ser refinado para producir combustibles o productos químicos.</p>
+        <h4>Solido </h4>
+        <p>Carbón (biochar en el caso de biomasa) que tiene aplicaciones en agricultura, filtración, y como combustible.
+        </p>
+    </section>
+    <section class="content about">
+        <h2 class="title">Proceso</h2>
+        <h3>1. Preparación del Material</h3>
+        <p>Antes de someterse a la pirólisis, el material de partida (como residuos de biomasa, plásticos o neumáticos
+            usados) generalmente requiere una preparación previa. Esto puede incluir la reducción de tamaño mediante
+            trituración o molienda, secado para disminuir el contenido de humedad, y a veces la mezcla de diferentes
+            materiales para optimizar el proceso.</p>
+        <h3>2. Alimentación y Calentamiento</h3>
+        <p>El material preparado se alimenta en un reactor de pirólisis. El reactor se calienta a la temperatura de
+            pirólisis, que varía según el material pero típicamente se encuentra en el rango de 300°C a 900°C. Este
+            calentamiento se realiza en ausencia de oxígeno o con una cantidad limitada del mismo para evitar la
+            combustión del material.</p>
+        <h3>3. Descomposición Térmica</h3>
+        <p>Bajo la influencia del calor y en ausencia de oxígeno, los enlaces químicos en el material se rompen,
+            iniciando la descomposición térmica. Este proceso resulta en la formación de tres tipos de productos: sólido
+            (carbón o biochar), líquido (aceite pirolítico) y gas. La proporción de estos productos depende de varios
+            factores, incluyendo el tipo de material, la temperatura, el tiempo de residencia en el reactor, y la
+            velocidad de calentamiento. </p>
+        <h3>4. Enfriamiento y Condensación</h3>
+        <p>Los vapores y gases producidos durante la pirólisis son conducidos fuera del reactor. Los compuestos
+            condensables (a menudo referidos colectivamente como aceite pirolítico) se enfrían y condensan en un sistema
+            de condensación, mientras que los gases no condensables pueden ser recogidos y tratados para su uso como
+            combustible o para otros fines.</p>
+        <h3>5. Recolección de Productos</h3>
+        <h4>Sólido</h4>
+        <p>Se recolecta del reactor una vez que el proceso ha concluido. El biochar tiene varias aplicaciones, como
+            mejora de suelos, material para filtración, o como fuente de carbono.</p>
+        <h4>Liquido</h4>
+        <p>Se separa y almacena después de la condensación. Este aceite puede ser procesado y refinado para producir
+            combustibles o como materia prima para la industria química.</p>
+        <h4>Gas</h4>
+        <p>Los gases no condensables pueden ser utilizados en sitios como fuente de energía para mantener el proceso de
+            pirólisis, generando un proceso más sostenible y eficiente desde el punto de vista energético.</p>
+        <h3>6. Tratamiento y Purificación</h3>
+        <p>A menudo, los productos de la pirólisis requieren un tratamiento o purificación adicionales antes de su uso
+            final. Por ejemplo, el aceite pirolítico puede necesitar ser refinado para mejorar sus propiedades como
+            combustible, mientras que los gases pueden requerir la eliminación de impurezas.</p>
+
+    </section>
+
+    <section class="content price">
+        <h2 class="tittle">Diseño Conceptual de una Máquina de Pirólisis Pequeña</h2>
+        <h3>Cámara de Reactor:</h3>
+        <p>Material: Acero inoxidable resistente a altas temperaturas.
+            Características: Cilindro sellado capaz de soportar vacío y presiones internas ligeramente positivas. Debe
+            tener un sistema de calentamiento externo, como calentadores eléctricos o una caldera de aceite térmico,
+            para llevar el material hasta la temperatura de pirólisis (generalmente entre 300 y 700°C, dependiendo del
+            material).</p>
+        <h3>Sistema de Alimentación:</h3>
+        <p>Descripción: Mecanismo para introducir el material de desecho en la cámara de reactor. Podría ser una tolva
+            con un tornillo sin fin para transportar el material de manera continua.</p>
+        <h3>Sistema de Calentamiento:</h3>
+        <p>Tipos: Resistencias eléctricas, caldera de aceite térmico, o gas. Debe ser capaz de alcanzar y mantener la
+            temperatura necesaria para la pirólisis sin la presencia de oxígeno.</p>
+        <h3>Sistema de Recolección de Gases:</h3>
+        <p>Descripción: Conducción sellada para los gases producidos, llevándolos a un sistema de enfriamiento y
+            condensación para separar los diferentes productos (ej., aceite pirolítico, gas).</p>
+        <h3>Sistema de Enfriamiento:</h3>
+        <p>Componentes: Condensadores y separadores de aceite/gas para recuperar los productos líquidos y gaseosos de la
+            pirólisis.</p>
+    </section>
+</body>
+ 
+<model-viewer class="modelviewer" src="MAQUINADEPIROLISIS.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+   
+    </button>
+    <div id="ar-prompt">
+
+    </div>
+</model-viewer>
+
+<section class="Ultimate"> 
+    <H2>Medidas</H2>
+    <p>
+        Primer cilindro: 60cm de alto y 40 de hancho</p>
+        <p> Segundo cilindro: 60cm de alto y 30 de hancho  </p>
+        <p>Tercer cilindro: 40cm de alto y 30 de hancho </p>
+        <p>Cuarto,quinto,sexto cilindro: 20cm de alto y 20 de hancho </p>
+
+</section>
+</body>
